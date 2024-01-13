@@ -28,6 +28,9 @@ public void PurgeUnusedMaterialAssets()
 {
 	UIDocument uidoc = this.ActiveUIDocument;
 	Document doc = uidoc.Document;
+
+	//or:
+	//Document doc = this.Application.ActiveUIDocument.Document;
 	
 	List<string> unusedAssetNames = new List<string>();
 	List<ElementId> unusedAssetIds = new List<ElementId>();
